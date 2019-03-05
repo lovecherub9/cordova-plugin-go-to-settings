@@ -1,0 +1,17 @@
+{
+  "name": "GoToSettingsPlugin",
+  "version": "0.0.1",
+  "description": "Open Android settings",
+  "cordova": {
+    "id": "cordova-plugin-go-to-settings",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Duc, Doan",
+  "license": "MIT"
+}

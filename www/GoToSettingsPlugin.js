@@ -1,5 +1,12 @@
 var exec = require('cordova/exec');
 
-exports.goToSettings = function () {
-    exec('GoToSettingsPlugin', 'goToSettings', null);
+var PLUGIN_NAME = 'GoToSettingsPlugin';
+
+var GoToSettingsPlugin = {
+  saveToGooglePay: function(successCallback, errorCallback) {
+    var args = {};
+    exec(successCallback, errorCallback, PLUGIN_NAME, 'goToSettings', [args]);
+  },
 };
+
+module.exports = GoToSettingsPlugin;

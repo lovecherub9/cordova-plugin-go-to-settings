@@ -1,11 +1,11 @@
-package cordova-plugin-go-to-settings;
+package org.apache.cordova.plugin;
+
+import android.content.Intent;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
 import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -13,9 +13,10 @@ import org.json.JSONObject;
 public class GoToSettingsPlugin extends CordovaPlugin {
 
     @Override
-    public void execute(String action) throws JSONException {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
         if (action.equals("goToSettings")) {
-            startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS));
+            cordova.getActivity().startActivity(new Intent((android.provider.Settings.ACTION_SETTINGS)));
         }
+        return true;
     }
 }

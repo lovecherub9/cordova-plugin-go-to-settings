@@ -14,7 +14,7 @@ public class GoToSettingsPlugin extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("coolMethod")) {
+        if (action.equals("goToSettings")) {
             startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS));
             return true;
         }

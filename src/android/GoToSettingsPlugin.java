@@ -1,4 +1,4 @@
-package cordova-plugin-go-to-settings;
+package cordova-plugin-go-to-settings.GoToSettingsPlugin;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;

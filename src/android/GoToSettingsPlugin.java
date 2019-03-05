@@ -13,11 +13,9 @@ import org.json.JSONObject;
 public class GoToSettingsPlugin extends CordovaPlugin {
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+    public void execute(String action) throws JSONException {
         if (action.equals("goToSettings")) {
             startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS));
-            return true;
         }
-        return false;
     }
 }

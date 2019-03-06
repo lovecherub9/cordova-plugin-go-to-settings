@@ -4,11 +4,7 @@
 <js-module name="GoToSettingsPlugin" src="www/GoToSettingsPlugin.js">
 <clobbers target="GoToSettingsPlugin" />
 </js-module>
-<platform name="android"><config-file parent="/*" target="res/xml/config.xml">
-<feature name="GoToSettingsPlugin">
-<param name="android-package" value="cordova-plugin-go-to-settings.GoToSettingsPlugin" />
-</feature>
-</config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file>
+<platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="GoToSettingsPlugin"><param name="android-package" value="cordova-plugin-go-to-settings.GoToSettingsPlugin" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file>
     <source-file src="src/android/GoToSettingsPlugin.java" target-dir="src/org/apache/cordova/plugin" />
 </platform>
 </plugin>

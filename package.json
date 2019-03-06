@@ -1,6 +1,6 @@
 {
-  "name": "GoToSettingsPlugin",
-  "version": "0.0.1",
+  "name": "cordova-plugin-go-to-settings",
+  "version": "1.0.0",
   "description": "Open Android settings",
   "cordova": {
     "id": "cordova-plugin-go-to-settings",
